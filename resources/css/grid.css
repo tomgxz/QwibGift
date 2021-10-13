@@ -1,0 +1,36 @@
+.grid-layout {
+    grid-template-rows: repeat(var(--rows),minmax(var(--row-size),auto));
+    position: relative;
+    z-index: 14;
+    display: grid;
+    grid-area: 1/1/-1/-1;
+    grid-template-columns: calc(var(--container-width)/2 - var(--content-width)/2) 1fr repeat(var(--column-count),minmax(0,var(--column-width))) 1fr calc(var(--container-width)/2 - var(--content-width)/2);
+    grid-auto-rows: var(--row-size);
+    row-gap: var(--row-gap);
+    column-gap: var(--column-gap);
+    padding: var(--block-padding);
+    --column-gap-count: calc(var(--column-count) - 1);
+    --column-width: calc((var(--grid-width) - var(--column-gap-count)*var(--column-gap))/var(--column-count));
+    --container-width: 100vw;
+}
+
+.grid-item {
+    position: relative;
+    z-index: var(--element-z-index);
+    display: flex;
+    flex-direction: column;
+    grid-area: var(--position);
+    align-items: var(--align);
+    justify-content: var(--justify);
+    padding: var(--grid-item-padding);
+    overflow: hidden;
+    text-align: var(--text);
+    width: fit-content;
+}
+
+.grid-text-box {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}

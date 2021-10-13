@@ -1,0 +1,58 @@
+:root {
+    --btn-solid-padding-primary: 16px 32px;
+
+    --btn-solid-primary-background-color: var(--colors-dark);
+    --btn-solid-secondary-background-color: var(--colors-light);
+    --btn-solid-primary-background-color-hover: var(--colors-grey-900);
+    --btn-solid-secondary-background-color-hover: var(--colors-grey-100);
+
+    --btn-solid-primary-color: var(--colors-light);
+    --btn-solid-secondary-color: var(--colors-dark);
+
+}
+
+.btn-solid {
+    display: inline-block;
+    max-width: 100%;
+    padding: var(--btn-solid-padding-primary);
+    overflow: hidden;
+
+    font-family: var(--btn-solid-font-family);
+    font-size: var(--btn-solid-font-size);
+    font-style: var(--btn-solid-font-style);
+    font-weight: var(--btn-solid-font-weight);
+    line-height: var(--btn-solid-line-height);
+    text-align: center;
+
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    letter-spacing: var(--btn-solid-letter-spacing);
+
+    white-space: nowrap;
+    cursor: pointer;
+
+    border: transparent;
+    border-radius: var(--btn-solid-border-radius);
+
+    box-shadow: none;
+
+    transition: all 0.2s ease;
+}
+
+.btn-solid-primary {
+    background-color: var(--btn-solid-primary-background-color);
+    color: var(--btn-solid-primary-color);
+}
+
+.btn-solid-secondary {
+    background-color: var(--btn-solid-secondary-background-color);
+    color: var(--btn-solid-secondary-color);
+}
+
+.btn-solid-primary:hover {
+    background-color: var(--btn-solid-primary-background-color-hover);
+}
+
+.btn-solid-secondary:hover {
+    background-color: var(--btn-solid-secondary-background-color-hover);
+}

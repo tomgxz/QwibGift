@@ -1,0 +1,53 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    max-width: 100%;
+    height: 100vh;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x:hidden;
+    overflow-y:auto;
+    /*background:var(--colors-dark);*/
+}
+
+::-webkit-scrollbar {
+	width: 4px;
+    z-index:4;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--colors-primary-accent); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  	background: var(--colors-accent-2-accent);
+}
+
+::-webkit-scrollbar-track {
+  	border-radius: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+	background: transparent;
+}
+
+img  {
+    pointer-events:none;
+}
+
+body {
+    margin:0px!important;
+}
+
+div,h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
+
+.sheet {
+    width: 1440px !important;
+    margin: 0 auto !important;
+    height:auto;
+}

@@ -1,0 +1,29 @@
+.layout-theme-1 { --local-bgcolor: var(--colors-dark); --local-color: var(--colors-light);
+    
+    --btn-solid-primary-background-color: var(--colors-light);
+    --btn-solid-secondary-background-color: var(--colors-grey-400);
+    --btn-solid-primary-background-color-hover: var(--colors-grey-100);
+    --btn-solid-secondary-background-color-hover: var(--colors-grey-500);
+
+    --btn-solid-primary-color: var(--colors-dark);
+    --btn-solid-secondary-color: var(--colors-dark);
+}
+
+.layout-theme-2 { --local-bgcolor: var(--colors-light); --local-color: var(--colors-dark) }
+.layout-theme-3 { --local-bgcolor: var(--colors-primary); --local-color: var(--colors-dark) }
+.layout-theme-4 { --local-bgcolor: var(--colors-secondary); --local-color: var(--colors-dark) }
+.layout-theme-5 { --local-bgcolor: var(--colors-accent-1); --local-color: var(--colors-dark) }
+.layout-theme-6 { --local-bgcolor: var(--colors-accent-2); --local-color: var(--colors-light);
+    
+    --btn-solid-primary-background-color: var(--colors-light);
+    --btn-solid-secondary-background-color: var(--colors-grey-400);
+    --btn-solid-primary-background-color-hover: var(--colors-grey-100);
+    --btn-solid-secondary-background-color-hover: var(--colors-grey-500);
+
+    --btn-solid-primary-color: var(--colors-dark);
+    --btn-solid-secondary-color: var(--colors-dark);
+}
+
+.text {
+    color:var(--local-color);
+}
