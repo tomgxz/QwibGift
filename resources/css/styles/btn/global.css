@@ -1,13 +1,11 @@
 :root {
     --btn-solid-padding-primary: 16px 32px;
 
-    --btn-solid-primary-background-color: var(--colors-dark);
-    --btn-solid-secondary-background-color: var(--colors-light);
-    --btn-solid-primary-background-color-hover: var(--colors-grey-900);
-    --btn-solid-secondary-background-color-hover: var(--colors-grey-100);
+    --btn-solid-primary-background-color: var(--colors-secondary);
+    --btn-solid-secondary-background-color: var(--colors-primary);
 
     --btn-solid-primary-color: var(--colors-light);
-    --btn-solid-secondary-color: var(--colors-dark);
+    --btn-solid-secondary-color: var(--colors-light);
 
 }
 
@@ -47,12 +45,4 @@
 .btn-solid-secondary {
     background-color: var(--btn-solid-secondary-background-color);
     color: var(--btn-solid-secondary-color);
-}
-
-.btn-solid-primary:hover {
-    background-color: var(--btn-solid-primary-background-color-hover);
-}
-
-.btn-solid-secondary:hover {
-    background-color: var(--btn-solid-secondary-background-color-hover);
 }

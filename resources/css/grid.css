@@ -26,6 +26,8 @@
     overflow: hidden;
     text-align: var(--text);
     width: fit-content;
+    
+    background-color:transparent;
 }
 
 .grid-text-box {

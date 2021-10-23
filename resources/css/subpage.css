@@ -1,0 +1,63 @@
+.subpage-header {
+    --m-rows: 1;
+    --grid-gap-history: 16px 24px;
+    --half-column-count: 6;
+
+    --rows: 5;
+    --width: var(--section-width);
+    --row-gap: 16px;
+    --row-size: 48px;
+    --column-gap: 24px;
+    --grid-width: var(--section-width);
+    --column-count: 12;
+    --content-width: 999999px;
+    --content-padding: 16px;
+    --m-block-padding: 40px 16px 40px 16px;
+    --oldContentWidth: 999999px;
+
+    min-height: 70px;
+    align-items:center;
+    width:100%;
+
+    color:var(--color);
+    background-color:transparent;
+}
+
+.subpage-header .grid-item {
+    background-color:var(--alt-background);
+}
+
+.subpage-header .grid-item-1 {
+    --text: left;
+    --align: flex-start;
+    --justify: center;
+    --position: 3/4/3/10;
+    --m-element-margin: 0 0 24px 0;
+    --element-z-index: 2;
+}
+
+.subpage-header .grid-item-2 {
+    --text: left;
+    --align: flex-start;
+    --justify: flex-start;
+    --position: 2/11/5/14;
+    --m-element-margin: 0 0 24px 0;
+    --element-z-index: 2;
+}
+
+.subpage-header .grid-item-3 {
+    --text: left;
+    --align: flex-start;
+    --justify: flex-start;
+    --position: 1/3/14/14;
+    --m-element-margin: 0 0 24px 0;
+    --element-z-index: -1;
+    position: absolute;
+    width:1344px;
+    height:370px;
+}
+
+
+.subpage-header img {
+    background-color: inherit;
+}

@@ -1,18 +1,24 @@
 :root {
-    --colors-primary: #30415D;
-    --colors-accent-1: #4C7BAC;
-    --colors-accent-2: #88A4CA;
-    --colors-secondary: #E93A55;
-    --colors-primary-dark: #1F2A3D;
-    --colors-accent-1-dark: #3D638A;
-    --colors-accent-2-dark: #6488BA;
-    --colors-primary-light: #425980;
-    --colors-accent-1-light: #6E96BF;
-    --colors-accent-2-light: #AABED9;
-    --colors-primary-accent: #394E6F;
-    --colors-secondary-dark: #D81836;
-    --colors-accent-1-accent: #5C89B7;
-    --colors-accent-2-accent: #99B1D1;
-    --colors-secondary-light: #EE687C;
-    --colors-secondary-accent: #EC5169;
+    --colors-primary-dark:          #1F2A3D;
+    --colors-primary:               #30415D;
+    --colors-primary-accent:        #394E6F;
+    --colors-primary-light:         #425980;
+
+    --colors-secondary-dark:        #D81836;   
+    --colors-secondary:             #E93A55;
+    --colors-secondary-accent:      #EC5169;
+    --colors-secondary-light:       #EE687C;
+
+
+    --colors-accent-1-dark:         #3D638A;
+    --colors-accent-1:              #4C7BAC;
+    --colors-accent-1-accent:       #5C89B7;
+    --colors-accent-1-light:        #6E96BF;
+
+
+    --colors-accent-2-dark:         #6488BA;
+    --colors-accent-2:              #88A4CA;
+    --colors-accent-2-accent:       #99B1D1;
+    --colors-accent-2-light:        #AABED9;
+
 }
