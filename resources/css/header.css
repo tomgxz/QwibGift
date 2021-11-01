@@ -150,9 +150,10 @@
 @media screen and (max-width:1450px) {
     .header-item {
         display:none!important;
+        text-align: center;
     }
 
-    .header-item .mobile-shown {
+    .mobile-shown {
         display:initial!important;
     }
 
@@ -164,8 +165,12 @@
         display: flex;
         margin: 0 48px !important;
         width: initial!important;
-        justify-content: center;
+        align-items: center;
         flex-direction: column;
+    }
+    
+    .header span {
+        align-self:center;
     }
 }
 
@@ -176,5 +181,9 @@
 
     .header .sheet-1 {
         justify-content: center;
+    }
+
+    .header-item .mobile-shown {
+        display:none!important;
     }
 }
