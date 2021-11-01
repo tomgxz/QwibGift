@@ -143,4 +143,38 @@
 
 .header .btn-3 {
     display:none;
+    width:64px;
+    height:64px;
+}
+
+@media screen and (max-width:1450px) {
+    .header-item {
+        display:none!important;
+    }
+
+    .header-item .mobile-shown {
+        display:initial!important;
+    }
+
+    .header .btn-3 {
+        display:initial;
+    }
+
+    .header .sheet-1 {
+        display: flex;
+        margin: 0 48px !important;
+        width: initial!important;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .header .btn-3 {
+        display:none;
+    }
+
+    .header .sheet-1 {
+        justify-content: center;
+    }
 }

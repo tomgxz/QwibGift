@@ -57,7 +57,28 @@
     height:370px;
 }
 
-
 .subpage-header img {
     background-color: inherit;
+}
+
+@media screen and (max-width:1450px) {
+    .subpage-header .sheet-1 {
+        display:flex;
+        flex-direction:column;
+        width:480px!important;
+    }
+
+    .subpage-header .grid-item {
+        width:100%;
+        align-items:center;
+        text-align:center;
+    }
+
+    .subpage-header .grid-item-2 {
+        background:transparent;
+    }
+
+    .subpage-header .grid-item-3 {
+        display:none;
+    }
 }

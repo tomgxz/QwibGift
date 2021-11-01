@@ -4,7 +4,7 @@
     --h1-font-style: normal;
     --h1-font-family: var(--font-primary);
     --h1-font-weight: 500;
-    --h1-line-height: 1;
+    --h1-line-height: 1.2;
     --h1-m-font-size: 40px;
     --h1-letter-spacing: normal;
     --h1-text-transform: none;
@@ -15,7 +15,7 @@
     --h2-font-style: normal;
     --h2-font-family: var(--font-primary);
     --h2-font-weight: 500;
-    --h2-line-height: 1;
+    --h2-line-height: 1.2;
     --h2-m-font-size: 36px;
     --h2-letter-spacing: normal;
     --h2-text-transform: none;
@@ -26,7 +26,7 @@
     --h3-font-style: normal;
     --h3-font-family: var(--font-primary);
     --h3-font-weight: 500;
-    --h3-line-height: 1;
+    --h3-line-height: 1.2;
     --h3-m-font-size: 32px;
     --h3-letter-spacing: normal;
     --h3-text-transform: none;
@@ -37,7 +37,7 @@
     --h4-font-style: normal;
     --h4-font-family: var(--font-primary);
     --h4-font-weight: 500;
-    --h4-line-height: 1;
+    --h4-line-height: 1.2;
     --h4-m-font-size: 28px;
     --h4-letter-spacing: normal;
     --h4-text-transform: none;
@@ -48,7 +48,7 @@
     --h5-font-style: normal;
     --h5-font-family: var(--font-primary);
     --h5-font-weight: 400;
-    --h5-line-height: 1;
+    --h5-line-height: 1.2;
     --h5-m-font-size: 24px;
     --h5-letter-spacing: normal;
     --h5-text-transform: none;
@@ -59,7 +59,7 @@
     --h6-font-style: normal;
     --h6-font-family: var(--font-primary);
     --h6-font-weight: 400;
-    --h6-line-height: 1;
+    --h6-line-height: 1.2;
     --h6-m-font-size: 20px;
     --h6-letter-spacing: normal;
     --h6-text-transform: none;
@@ -70,7 +70,7 @@
     --body-font-style: normal;
     --body-font-family: var(--font-secondary);
     --body-font-weight: 400;
-    --body-line-height: 1;
+    --body-line-height: 1.2;
     --body-m-font-size: 16px;
     --body-letter-spacing: normal;
     --body-text-transform: normal;
@@ -81,7 +81,7 @@
     --nav-link-font-style: normal;
     --nav-link-font-family: var(--font-primary);
     --nav-link-font-weight: 400;
-    --nav-link-line-height: 1;
+    --nav-link-line-height: 1.2;
     --nav-link-m-font-size: 16px;
     --nav-link-letter-spacing: normal;
     --nav-link-text-transform: none;
@@ -92,7 +92,7 @@
     --body-large-font-style: normal;
     --body-large-font-family: var(--font-secondary);
     --body-large-font-weight: normal;
-    --body-large-line-height: 1;
+    --body-large-line-height: 1.2;
     --body-large-m-font-size: 18px;
     --body-large-letter-spacing: normal;
     --body-large-text-transform: none;
@@ -103,7 +103,7 @@
     --body-small-font-style: normal;
     --body-small-font-family: var(--font-secondary);
     --body-small-font-weight: 400;
-    --body-small-line-height: 1;
+    --body-small-line-height: 1.2;
     --body-small-m-font-size: 14px;
     --body-small-letter-spacing: normal;
     --body-small-text-transform: none;
@@ -113,7 +113,7 @@
     --btn-solid-font-size: 16px;
     --btn-solid-font-style: normal;
     --btn-solid-font-weight: normal;
-    --btn-solid-line-height: 1;
+    --btn-solid-line-height: 1.2;
     --btn-solid-letter-spacing: 0.05em;
 }
 
