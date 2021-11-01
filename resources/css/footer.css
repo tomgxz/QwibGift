@@ -135,3 +135,28 @@ footer .grid-item-3 {
     --element-z-index: 2;
     width: var(--column-width);
 }
+
+@media screen and (max-width:1450px) {
+    footer .sheet-1 {
+        display: flex;
+        margin: 0 48px !important;
+        width: initial!important;
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width:450px) {
+    footer .sheet-1 {
+        justify-content: center;
+    }
+
+    footer .grid-item {
+        display:none!important;
+    }
+
+    footer .grid-item-3 {
+        display:block!important;
+        text-align: center;
+    }
+}

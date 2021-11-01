@@ -174,7 +174,7 @@
     }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:200px) {
     .header .btn-3 {
         display:none;
     }
