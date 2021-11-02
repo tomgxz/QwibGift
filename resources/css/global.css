@@ -93,7 +93,8 @@ p {
 
 ::-webkit-scrollbar {
 	width: 4px;
-    z-index:4;
+    z-index: 9999999999999999999;
+    background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
