@@ -87,5 +87,22 @@
     text-align: center;
 }
 
+@media screen and (max-width:1450px) {
+    .section-2 .sheet-1 {
+        width: calc(100% - 37px)!important;
+    }
 
+    .section-2 .grid-item-5,
+    .section-2 .grid-item-6 {
+        width: calc(100vw - 37px)!important;
+    }
+}
 
+@media screen and (max-width:800px) {
+    .section-2 .sheet-1 {
+        display: flex;
+        width: calc(100% - 48px)!important;
+        flex-wrap: wrap;
+        margin: 0 24px!important;
+    }
+}

@@ -134,3 +134,27 @@
     text-align: justify;
 }
 
+@media screen and (max-width:1450px) {
+    .section:not(.section-1) .sheet-1 {
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        margin:0 48px!important;
+        width:calc(100% - 96px)!important;
+        align-items:center;
+    }
+
+    .section:not(.section-1) .grid-item:not(.grid-image) {
+        width:fit-content;
+    }
+
+    .section:not(.section-1) .grid-text-box-1 {
+        width:calc(100% / 2);
+    }
+
+    .section:not(.section-1) .grid-text-box-2 {
+        width:100%;
+    }
+
+
+}
