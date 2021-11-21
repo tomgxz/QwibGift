@@ -88,6 +88,8 @@ body {
     overflow-y:auto;
 }
 
+
+
 p {
     color:var(--p-color)!important;
 }
@@ -232,6 +234,7 @@ a {
     top: 45px;
     font-size: 15px;
     padding: 0 32px;
+    box-sizing: content-box;
 }
 
 .caption {

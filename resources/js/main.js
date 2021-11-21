@@ -152,6 +152,25 @@ document.querySelectorAll('.day-night').forEach(dayNight => {
 });
 
 
+function getYPositionTotal() {
+    return document.body.scrollTop;
+}
+
+function getMovementValue(currentScrollPos, startScrollPos, endScrollPos, startChange, endChange) {
+
+    var range = endScrollPos-startScrollPos;
+    var position = currentScrollPos-startScrollPos;
+    var percent = position/range;
+
+    var changeRange = endChange-startChange;
+    var change = changeRange * percent;
+
+    var value = startChange + change;
+
+    return value;
+}
+
+
 
 while (!(document.getElementsByTagName("body")[0].classList.contains("jsedited")));
 
