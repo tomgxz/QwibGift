@@ -147,6 +147,14 @@
     height:64px;
 }
 
+.header-burger .menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+}
+
 @media screen and (max-width:1450px) {
     .header-item {
         display:none!important;
