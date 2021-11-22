@@ -277,6 +277,18 @@ function part3(ypos) {
     }
 }
 
+function hide(e) {
+    if (!(e.style.display=="none")) {
+        e.style.display="none";
+    }
+}
+
+function show(e,t) {
+    if (e.style.display=="none") {
+        e.style.display=t
+    }
+}
+
 document.body.addEventListener("scroll", function(ev) {
 
     var scrollElement1 = document.getElementById("scrollElement1")
@@ -294,6 +306,40 @@ document.body.addEventListener("scroll", function(ev) {
     var ypos = getYPositionTotal();
     console.log(ypos);
 
+
+
+
+    if (ypos >= 2000) {
+        hide(scrollElement1);
+    } else {
+        show(scrollElement1,"block");
+    }
+
+    if (ypos < 800) {
+        hide(scrollElement3);
+    } else if (ypos >= 2600) {
+        hide(scrollElement3)
+    } else {
+        show(scrollElement3,"flex");
+    }
+
+    if (ypos < 2000) {
+        hide(scrollElement7);
+    } else if (ypos >= 3800) {
+        hide(scrollElement7);
+    } else {
+        show(scrollElement7,"block");
+    }
+
+    if (ypos < 3200) {
+        hide(scrollElement8);
+    } else if (ypos >= 4600) {
+        hide(scrollElement8);
+    } else {
+        show(scrollElement8,"flex");
+    }
+
+
     if (ypos >= 0 && ypos <= 3800) {
         part1(ypos)
     }
@@ -303,6 +349,8 @@ document.body.addEventListener("scroll", function(ev) {
     if (ypos >= 4500) {
         part3(ypos)
     }
+
+    
 
 });
 
@@ -316,4 +364,16 @@ function hideNoScrollFrame() {
     document.getElementById("redirectFrame").style.display="none"
     document.getElementById("redirectToggle1").style.display="flex"
     document.getElementById("redirectToggle2").style.display="none"
+    window.location.reload();
 }
+
+$(function() {
+    $( "#scrbtnup" ).click(function(){
+        $('body').scrollTop($('body').scrollTop()-200);
+    }); 
+
+    $( "#scrbtndown" ).click(function(){
+        $('body').scrollTop($('body').scrollTop()+200);;
+    }); 
+});
+

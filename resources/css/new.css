@@ -243,3 +243,46 @@
     transform: translate(-50%,0);
     transform-origin: top;
 }
+
+
+.scrollButtons {
+    background-color: var(--alt-background);
+    color: var(--color);
+    position: fixed;
+    font-family: Lexend, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    z-index: 99;
+    opacity: 1;
+    -webkit-transition: opacity 1s ease;
+    transition: opacity 1s ease;
+    padding: 1em;
+    width: 15em;
+    margin-bottom: 1em;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    align-items: center;
+    bottom: 0;
+    right: 4em;
+    border-radius: 1em;
+    justify-content: space-between;
+    transform-origin:bottom right;
+    transform: translatey(-50%) scale(0.8);
+}
+
+
+@media screen and (max-width: 1450px) {
+    .scrollButtons,
+    .scrollDisablePopup,
+    .main {
+        display:none!important;
+    }
+    .noScrollFrame {
+        display:initial!important;
+    }
+}

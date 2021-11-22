@@ -180,3 +180,5 @@ var styleTagContent = document.createTextNode("*{transition: background-color .5
 
 styleTag.appendChild(styleTagContent);
 headTag.appendChild(styleTag);
+
+
