@@ -263,16 +263,15 @@
     transition: opacity 1s ease;
     padding: 1em;
     width: 15em;
-    margin-bottom: 1em;
     -ms-flex-direction: row;
     flex-direction: row;
     align-items: center;
-    bottom: 0;
-    right: 4em;
+    bottom: 1em;
+    right: 1em;
     border-radius: 1em;
     justify-content: space-between;
     transform-origin:bottom right;
-    transform: translatey(-50%) scale(0.8);
+    transform: scale(0.8);
 }
 
 
@@ -285,4 +284,93 @@
     .noScrollFrame {
         display:initial!important;
     }
+}
+
+
+.section-2 .scrolling-foreground-3 {
+    --m-rows: 1;
+    --grid-gap-history: 16px 24px;
+    --half-column-count: 6;
+    
+    --width: var(--section-width);
+    --row-gap: 16px;
+    --row-size: 48px;
+    --column-gap: 24px;
+    --grid-width: var(--section-width);
+    --column-count: 12;
+    --content-width: 999999px;
+    --content-padding: 16px;
+    --m-block-padding: 40px 16px 40px 16px;
+    --oldContentWidth: 999999px;
+
+    min-height: 70px;
+    align-items:center;
+    width:100%;
+
+    background-color:transparent;
+}
+
+.section-2 .scrolling-foreground-3 .caption {
+    margin:0 0 16px;
+}
+
+.section-2 .scrolling-foreground-3 h5 {
+    color: var(--colors-accent-1);
+    text-transform: uppercase;
+    margin: 16px 0 32px;
+}
+
+.section-2 .scrolling-foreground-3 .divider {
+    color: var(--colors-accent-1);
+    text-transform: uppercase;
+    margin: 16px 0;
+    width:100%;
+}
+
+.section-2 .scrolling-foreground-3 .tile-card {
+    width:340px;
+    box-sizing: content-box;
+    padding: var(--grid-item-padding);
+    overflow: hidden;
+    text-align: center;
+    position: fixed;
+    top:65%;
+    transform:translate(-50%,-50%);
+}
+
+.section-2 .scrolling-foreground-3 .tile-card-1 {
+    left:25%;
+}
+
+.section-2 .scrolling-foreground-3 .tile-card-2 {
+    left:50%;
+}
+.section-2 .scrolling-foreground-3 .tile-card-3 {
+    left:75%;
+}
+
+.section-2 .scrolling-foreground-3 .tile-main {
+    width:300px;
+}
+
+.section-2 .scrolling-foreground-3 .includes p {
+    color:var(--color)!important;
+    margin: 32px 0;
+}
+
+.section-2 .scrolling-foreground-3 .includes .suffix {
+    color:var(--colors-grey-400);
+}
+
+.section-2 .scrolling-foreground-3 .btn {
+    margin-top: 16px;
+}
+
+.section-2 .scrolling-foreground-3 .btn-4 {
+    display: none;
+}
+
+.section-2 .scrolling-foreground-3 .mobile-btn {
+    display: flex;
+    justify-content: center;
 }

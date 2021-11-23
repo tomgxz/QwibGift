@@ -51,16 +51,15 @@ body {
     transition: opacity 1s ease;
     padding: 1em;
     width: 23em;
-    margin-bottom: 1em;
     -ms-flex-direction: row;
     flex-direction: row;
     align-items: center;
-    bottom: 0;
+    bottom: 1em;
     left: 1em;
     border-radius: 1em;
     justify-content: space-between;
-    transform-origin:bottom left;
-    transform:translatey(-50%) scale(0.8);
+    transform-origin: bottom left;
+    transform: scale(0.8);
 }
 
 

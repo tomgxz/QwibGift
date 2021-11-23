@@ -275,6 +275,52 @@ function part3(ypos) {
         scrollElement13.style.transform="translateX(-50%) scale(1)";
         scrollElement13.classList.add("jsedited");
     }
+
+    var startScroll=6500;
+    var endScroll=7099;
+
+    if (ypos >= startScroll && ypos <= endScroll) {
+        scrollElement14.style.opacity=getMovementValue(ypos, startScroll, endScroll, 0, 1);
+        scrollElement16.style.top=getMovementValue(ypos, startScroll, endScroll, 60, 65)+"%";
+        scrollElement14.classList.add("jsedited");
+    } else if (ypos < startScroll) {
+        scrollElement14.style.opacity="0";
+        scrollElement16.style.top="60%";
+        scrollElement14.classList.add("jsedited");
+    } else if (ypos > endScroll) {
+        scrollElement14.style.opacity="1";
+        scrollElement16.style.top="65%";
+        scrollElement14.classList.add("jsedited");
+    }
+
+    if (ypos >= startScroll && ypos <= endScroll) {
+        scrollElement15.style.opacity=getMovementValue(ypos, startScroll, endScroll, 0, 1);
+        scrollElement15.style.top=getMovementValue(ypos, startScroll, endScroll, 70, 65)+"%";
+        scrollElement15.classList.add("jsedited");
+    } else if (ypos < startScroll) {
+        scrollElement15.style.opacity="0";
+        scrollElement15.style.top="70%";
+        scrollElement15.classList.add("jsedited");
+    } else if (ypos > endScroll) {
+        scrollElement15.style.opacity="1";
+        scrollElement15.style.top="65%";
+        scrollElement15.classList.add("jsedited");
+    }
+
+    if (ypos >= startScroll && ypos <= endScroll) {
+        scrollElement16.style.opacity=getMovementValue(ypos, startScroll, endScroll, 0, 1);
+        scrollElement16.style.top=getMovementValue(ypos, startScroll, endScroll, 60, 65)+"%";
+        scrollElement16.classList.add("jsedited");
+    } else if (ypos < startScroll) {
+        scrollElement16.style.opacity="0";
+        scrollElement16.style.top="60%";
+        scrollElement16.classList.add("jsedited");
+    } else if (ypos > endScroll) {
+        scrollElement16.style.opacity="1";
+        scrollElement16.style.top="65%";
+        scrollElement16.classList.add("jsedited");
+    }
+
 }
 
 function hide(e) {
@@ -302,6 +348,11 @@ document.body.addEventListener("scroll", function(ev) {
     var scrollElement9 = document.getElementById("scrollElement9")
     var scrollElement10 = document.getElementById("scrollElement10")
     var scrollElement11 = document.getElementById("scrollElement11")
+    var scrollElement12 = document.getElementById("scrollElement12")
+    var scrollElement13 = document.getElementById("scrollElement13")
+    var scrollElement14 = document.getElementById("scrollElement14")
+    var scrollElement15 = document.getElementById("scrollElement15")
+    var scrollElement16 = document.getElementById("scrollElement16")
 
     var ypos = getYPositionTotal();
     console.log(ypos);
