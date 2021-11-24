@@ -431,11 +431,17 @@
     margin-bottom: 1rem;
 }
 
-.section-4 .fas,
-.section-4 .fa-solid {
+.section-4 .faicon {
     background: transparent
 }
 
+.section-4 .faicon-primary {
+    color:var(--colors-accent-1)!important;
+}
+
+.section-4 .faicon-secondary {
+    color:var(--colors-secondary)!important;
+}
 
 
 

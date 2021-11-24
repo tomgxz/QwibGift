@@ -106,6 +106,8 @@
     margin: auto auto 16px;
 }
 
+
+
 .section-1 .scrolling-foreground-1 .tile-card {
     max-width:340px;
     padding: var(--grid-item-padding);
@@ -374,3 +376,16 @@
     display: flex;
     justify-content: center;
 }
+
+.faicon {
+    background: transparent
+}
+
+.faicon-primary {
+    color:var(--colors-accent-1)!important;
+}
+
+.faicon-secondary {
+    color:var(--colors-secondary)!important;
+}
+
