@@ -72,6 +72,8 @@ function sleep(milliseconds) {
     } while (currentDate - date < milliseconds);
 }
 
+
+
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     document.getElementById("body").classList.add("dark")
     document.getElementById("body").classList.remove("light")
@@ -180,5 +182,4 @@ var styleTagContent = document.createTextNode("*{transition: background-color .5
 
 styleTag.appendChild(styleTagContent);
 headTag.appendChild(styleTag);
-
 
