@@ -1,0 +1,17 @@
+
+/* SECTION 2 */
+
+.section-2 {
+    display:flex;
+    justify-content: center;
+
+    min-height: 70px;
+    width:100%;
+
+    background-color:transparent;
+}
+
+iframe {
+    width: 92vw;
+    height: 11608px;
+}
