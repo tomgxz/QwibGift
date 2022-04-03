@@ -209,3 +209,26 @@
     padding-top: 32px;
     box-shadow: 0px -16px 20px 5px var(--colors-light)
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+.section.seven {
+    background-image:url(../img/punto-preview.png);
+    background-color: rgb(17, 14, 40);
+    background-position: 50% 0px;
+}
+
+.section.seven .text.one {
+    font-family: "Varela Round";
+    font-weight: 400;
+    font-size: 64px;
+    letter-spacing: 10px;
+}
+
+.section.seven .text.two {
+    font-family: "Varela Round";
+    font-weight: 400;
+    font-size: 32px;
+    width: 70%;
+}
