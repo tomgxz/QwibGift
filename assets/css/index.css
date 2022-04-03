@@ -217,6 +217,7 @@
     background-image:url(../img/punto-preview.png);
     background-color: rgb(17, 14, 40);
     background-position: 50% 0px;
+    text-decoration: none;
 }
 
 .section.seven .text.one {
