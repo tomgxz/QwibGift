@@ -1,0 +1,211 @@
+@media {
+
+  .globalnav {
+    background-color:var(--colors-grey-100)
+  }
+
+  .section {
+    background-color:var(--colors-light);
+  }
+
+  .section.one {
+    height:100vh;
+    position:relative;
+    justify-content:center;
+  }
+
+  .text-scroll-reveal-container {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:80%;
+  }
+
+  .text-scroll-reveal-subcontainer {
+    position:relative;
+    width:100%;
+    height:120px;
+  }
+
+  .text-scroll-reveal-subcontainer .text-scroll-reveal {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translateX(-50%) translateY(-50%);
+    width:inherit;
+    text-align:center;
+  }
+
+  .section-canvas-background {
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index:-1;
+    opacity:.5;
+  }
+
+  .section.two {
+    margin-top:-180px;
+  }
+
+  .section.two .section-content {
+    flex-direction:row;
+    justify-content: space-between;
+  }
+
+  .section.two .tile-card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 32px 20px;
+      overflow: hidden;
+      width:340px;
+  }
+
+  .section.two .tile-card .icon {
+        margin: auto auto 16px;
+  }
+
+  .section.two .tile-card .icon .img {
+    width: 250px;
+    height: auto;
+  }
+
+  .section.two .tile-card .main {
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .section.two .tile-card .main .text.one,
+  .section.two .tile-card .main .text.two {
+      margin-bottom:2rem;
+      text-align: center;
+  }
+
+  .section.three {
+      background-color:transparent;
+      height:100vh;
+      overflow: hidden;
+      display: block;
+  }
+
+  .section.three * {
+    z-index:2;
+  }
+
+  .section.three .link-above {
+      border-radius: 0 0 2em 2em;
+      background-color:var(--colors-light);
+      height:256px;
+      width:100%;
+  }
+
+  .section.three .section-background {
+      position: fixed;
+      top:0;
+      width: 100vw;
+      height: 100vh;
+      background-image: url(../img/socks.jpg);
+      z-index:-1;
+      transform-origin: 25% 25%;
+  }
+
+  .section.three .section-content {
+    background:transparent;
+    height: fit-content;
+  }
+
+  .section.three .text-scroll-reveal-container {
+    width:100%;
+    margin-top:128px;
+  }
+
+  .divider {
+    margin-top: 16px;
+    margin-bottom: 32px;
+    width: 96px;
+    height: 4px;
+    border-radius: 40px;
+    background-color: var(--colors-secondary);
+  }
+
+  .section.four {
+    background-color:transparent;
+    /*margin-bottom: 500px;*/
+  }
+
+  .section.five {
+      margin-bottom: 4800px;
+  }
+
+  .section.five .container-item {
+    text-align: center;
+    padding: 16px;
+    display: flex;
+    width: calc(1440px/4.5);
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background: transparent;
+    position:absolute;
+    top:0;
+    margin-top: 140px;
+  }
+
+  .section.five .container-item .text {
+      margin-bottom: 2rem;
+  }
+
+  .section.five .container-item .icon {
+      display: inline-block;
+      width: 120px;
+      height: 120px;
+      line-height: 60px;
+      border-radius: 50%;
+      text-align: center;
+      background-color: #fbfbfb;
+      color: var(--colors-accent-1);
+      font-size: 66px;
+      box-shadow: 0px 10px 12px 2px rgb(0 0 0 / 4%);
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow:hidden;
+  }
+
+  .section.five .container-item .faicon {
+      background: transparent;
+      z-index: 2;
+  }
+
+  .section.five .container-item .faicon-primary {
+      color:var(--colors-primary-light)!important;
+  }
+
+  .section.five .container-item .faicon-secondary {
+      color:var(--colors-secondary)!important;
+  }
+
+  .section.five .section-content {
+      position: relative;
+      margin-bottom: 512px;
+      height: 529px;
+  }
+
+  .section.five .section-canvas-background {
+    width:100vw;
+    height:100vh;
+    top:0;
+    left:0;
+  }
+
+}
+
+.section.six {
+    margin-top: -150vh;
+    padding-top: 32px;
+    box-shadow: 0px -16px 20px 5px var(--colors-light)
+}
