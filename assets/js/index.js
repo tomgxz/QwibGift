@@ -5,14 +5,17 @@ $(document).ready(function() {
 
   function createHexCanvas(id) {
 
-    class Cube {
+    class Hexagon {
       constructor(color) {
+        // starting position
         this.x = (Math.random() - 0.5) * width;
         this.y = (Math.random() - 0.5) * width;
         this.z = (Math.random() - 0.5) * width;
+        // how large the hex is
         this.radius = Math.floor(Math.random() * 12 +  10);
         this.strokeColor=color
 
+        // gsap animation to move around the canvas
         TweenMax.to(this, Math.random() * 20 + 15, {
           x: (Math.random() - 0.5) * (width * 0.5),
           y: (Math.random() - 0.5) * (width * 0.5),
@@ -24,7 +27,7 @@ $(document).ready(function() {
         });
       }
 
-      project(x, y, z) {
+      project(x, y, z) { // works out how far apart the coordinates will need to be for the perspective
         const sizeProjection = perspective / (perspective + z);
         const xProject = (x * sizeProjection) + projectionCenterX;
         const yProject = (y * sizeProjection) + projectionCenterY;
@@ -35,20 +38,20 @@ $(document).ready(function() {
         }
       }
 
-      draw() {
+      draw() { // create the image of a hexagon on the canvas
         if (this.z < -perspective + this.radius) {
           return;
         }
-        for (let i = 0; i < CUBE_LINES.length; i++) {
+        for (let i = 0; i < HEXAGON_LINES.length; i++) {
           const v1 = {
-            x: this.x + (this.radius * CUBE_VERTICES[CUBE_LINES[i][0]][0]),
-            y: this.y + (this.radius * CUBE_VERTICES[CUBE_LINES[i][0]][1]),
-            z: this.z + (this.radius * CUBE_VERTICES[CUBE_LINES[i][0]][2])
+            x: this.x + (this.radius * HEXAGON_VERTICES[HEXAGON_LINES[i][0]][0]),
+            y: this.y + (this.radius * HEXAGON_VERTICES[HEXAGON_LINES[i][0]][1]),
+            z: this.z + (this.radius * HEXAGON_VERTICES[HEXAGON_LINES[i][0]][2])
           };
           const v2 = {
-            x: this.x + (this.radius * CUBE_VERTICES[CUBE_LINES[i][1]][0]),
-            y: this.y + (this.radius * CUBE_VERTICES[CUBE_LINES[i][1]][1]),
-            z: this.z + (this.radius * CUBE_VERTICES[CUBE_LINES[i][1]][2])
+            x: this.x + (this.radius * HEXAGON_VERTICES[HEXAGON_LINES[i][1]][0]),
+            y: this.y + (this.radius * HEXAGON_VERTICES[HEXAGON_LINES[i][1]][1]),
+            z: this.z + (this.radius * HEXAGON_VERTICES[HEXAGON_LINES[i][1]][2])
           };
           const v1Project = this.project(v1.x, v1.y, v1.z);
           const v2Project = this.project(v2.x, v2.y, v2.z);
@@ -70,17 +73,7 @@ $(document).ready(function() {
       perspective = width * 0.8
       projectionCenterX = width/2;
       projectionCenterY = height/2;
-
-      if (window.devicePixelRatio > 1) {
-        canvas.width = canvas.clientWidth * 2;
-        canvas.height = canvas.clientHeight * 2;
-        ctx.scale(2, 2);
-      } else {
-        canvas.width = width;
-        canvas.height = height;
-      }
     }
-
 
     var canvas = document.getElementById(id);
 
@@ -88,15 +81,15 @@ $(document).ready(function() {
     var height=canvas.offsetHeight;
     var ctx=canvas.getContext("2d")
 
+    var perspective = width * 0.8; // fov
+    var projectionCenterX = width/2;
+    var projectionCenterY = height/2;
+
     window.addEventListener("resize",onResize);
 
     onResize();
 
-    var perspective = width * 0.5; // fov
-    var projectionCenterX = width/2;
-    var projectionCenterY = height/2;
-
-    const CUBE_VERTICES = [
+    const HEXAGON_VERTICES = [
     [0, 0, 0],
     [0.8,-1.3, 0],
     [2.4,-1.3, 0],
@@ -111,7 +104,8 @@ $(document).ready(function() {
     [2.4, 1.3, 1],
     [0.8, 1.3, 1],
     ];
-    const CUBE_LINES = [
+
+    const HEXAGON_LINES = [
     [0,1],
     [1,2],
     [2,3],
@@ -140,7 +134,7 @@ $(document).ready(function() {
     var shapes=[];
 
     for (var i=0;i<50;i++) {
-      shapes.push(new Cube(colorChoices[Math.floor(Math.random() * colorChoices.length)]));
+      shapes.push(new Hexagon(colorChoices[Math.floor(Math.random() * colorChoices.length)]));
     }
 
     function render() {
